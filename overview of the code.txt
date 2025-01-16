@@ -1,0 +1,21 @@
+
+1. Environment Setup:
+    You use load_dotenv() to load environment variables, such as the database connection details.
+
+2. Database Initialization (init_database):
+    This function connects to the MySQL database using the credentials from the environment variables.
+
+3. SQL Chain Generation (get_sql_chain):
+    This generates a chain of operations that takes in user queries and generates an SQL query using a predefined template and 
+    the ChatGroq model for processing the natural language input.
+
+4. Response Generation (get_response):
+   This uses the SQL query generated in the previous step and executes it against the database, then generates a natural language 
+   response by formatting both the SQL query and its result.
+
+5. Streamlit Interface:
+   The user inputs a question, which is added to the chat history. The assistant generates a response using the chain defined 
+   above and appends it to the chat history.
+
+
+================================================================================================================================

@@ -1,0 +1,9 @@
+#TO CREATED NEW ENVIOREMENT________________________________________
+python -m venv 
+
+#ACTIVATE THE ENVIOREMENT________________________________________
+.\venv\Scripts\activate
+
+#to run app.py code
+streamlit run app.py.
+
